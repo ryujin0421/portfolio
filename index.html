@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <Title>Editor</Title>
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Caveat|Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $('.zoom_up').click(function(e) {
+        e.preventDefault();
+        var id = $(this).attr('href');
+        $(id).fadeIn();
+        $('.popupbg').fadeIn();
+        $('body').addClass('stop-scrolling');
+      })
+      $('.popupbg,.close_btn').click(function() {
+        $('.popup_wrapper:visible').fadeOut();
+        $('.popupbg').fadeOut();
+        $('body').removeClass('stop-scrolling');
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <header>
+    <img src="logo.png" alt="">
+  </header>
+  <div class="phone">
+
+    <section>
+      <img src="ryujin.png" width="300">
+      <h3>Designer</h3>
+      <h1>大山隆仁</h1>
+      <h2>@bigmountain421</h2>
+      <p>lifeistech/Mentor/UIUX/Graphic/Web/<br>Photographer/Leaders/テクノロジア魔法学校WebDesign/<br>Gotham bold/#f2f2f0</p>
+
+      <a href="https://www.wantedly.com/companies/lifeistech/post_articles/107928" target="_blank"><i class="far fa-newspaper"></i></a>
+      <a href="https://www.facebook.com/ryujin0421" target="_blank"><i class="fab fa-facebook-square"></i></a>
+      <a href="https://twitter.com/bigmountain421" target="_blank"><i class="fab fa-twitter-square"></i></a>
+      <a href="https://www.instagram.com/bigmountain421/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </section>
+    <div class="wrapper">
+      <a href="#img01_wrapper" class="zoom_up work">
+        <img src="technorogia.png" width="280">
+        </a>
+      <a href="#img02_wrapper" class="zoom_up work">
+        <img src="sayonara.png" width="280">
+      </a>
+      <a href="#img03_wrapper" class="zoom_up work">
+        <img src="leaders.png" width="280">
+      </a>
+      <a href="#img04_wrapper" class="zoom_up work">
+        <img src="motety.png" width="280">
+      </a>
+      <a href="#img05_wrapper" class="zoom_up work">
+        <img src="matchcloset.png" width="280">
+      </a>
+      <a href="#img06_wrapper" class="zoom_up work">
+        <img src="arch.png" width="280">
+      </a>
+      <a href="#img07_wrapper" class="zoom_up work">
+        <img src="nanami.png" width="280">
+      </a>
+      <a href="#img08_wrapper" class="zoom_up work">
+        <img src="namecard.png" width="280">
+      </a>
+      <a href="#img09_wrapper" class="zoom_up work">
+        <img src="spring_t.png" width="280">
+      </a>
+      <!--テクノロジア-->
+      <div id="img01_wrapper" class="popup_wrapper">
+        <div class="modal">
+          <div class="close_btn"><img src="close.png"></div>
+          <img src="technorogia.png" width="800">
+          <div class="modal_contents">
+            <h3>Title</h3>
+            <p>テクノロジア魔法学校</p>
+            <h3>Work</h3>
+            <p>ディズニーとライフイズテックのコラボで制作した今までにないプログラミング教材です。ディズニーの世界観を使って楽しみながらプログラミングを学べるこの教材は主にメディアアート/ゲーム/Webデザインの3つのコースがあります。
+              <img src="technologia02.png" width="500"><br> プログラミングの学習において特に問題となっているのが「学習の継続」と「苦手意識」だと考えており、それぞれのディズニータイトルの世界観を使ったレッスンをクリアするたびにアイテムが家に届きモチベーションをあげる仕組みを取っています。ライフイズテックはプログラミングを楽しみながら学べるようにエンターテイメント要素も含みながら学習することができるので誰でも簡単にプログラミングを学ぶことができる仕組みになっています。ライフイズテックのメンターは普段5,6人の中高生に大学生が１人ついて対面でプログラミングを教えています。中高生がどこでつまづくか、どういう教え方をすればわかりやすいかなど教育のノウハウを知っている大学生メンターが教材を作成しているのでわかりやすい教材を作ることがきます。 自分はそこでWebデザインコースの教材を担当しており、HTML/CSS/JavaScriptの教材を作っています。実際に出しているレッスンは一部ですが、１年間で数十個のレッスンを作成しており最適な教え方やディズニー世界観を最大限に引き出すデザインを製作していきました。繰り返しやることで誰でもWebサイトを作れるようなカリキュラムになっています。<br>
+               <img src="technologia03.png" width="500"><br>
+               インターンですがデザインチームに入れてもらいUI/UXを担当しました。
+               世界観はディズニーが誕生した1920年代アメリカでアールヌーヴォを意識したデザインで幾何学的な模様を使ったりしています。仕様書を元にデザインを繰り返しチーフデザイナーと一緒に製作しています。素材を作ってくれるデザイナーから素材をもらい、それを仕様書を元にデザインツールのsketchを使ってInVisionで繰り返しデザインを作りました。半年間で100ページ以上のデザインを作成しました。<br> 
+                <img src="technologia04.png" width="500"><br>
+            </p>
+            <div class="contents_btn">
+              <a href="https://www.technologia-schoolofmagic.jp/" target="_blank">MORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--      さよならの春-->
+      <div id="img02_wrapper" class="popup_wrapper">
+        <div class="modal">
+          <div class="close_btn"><img src="close.png"></div>
+          <img src="sayonara.png" width="800">
+          <div class="modal_contents">
+            <h3>Title</h3>
+            <p>18卒追いコンLOGO</p>
+            <h3>Concept</h3>
+            <p>さよならの春</p>
+            <h3>Work</h3>
+            <p>ライフイズテック18卒追いコンのロゴを製作しました。毎年ライフイズテック を代表するデザイナーがロゴ作成を担当しています。今回は卒業生を本気泣かせるという思いを込めて寂しさを込めたタイポグラフィに春をイメージした桜のシルエットを使いデザインしました。</p>
+            <img src="sayonaraharu02.jpg" width="500"><br> 作ったロゴはTシャツにして在校生メンターが卒業メンターのTシャツに各々の思いやメッセージを書くのが伝統になっていて背景は白地のデザインでメッセージを書きやすいデザインになっています。
+          </div>
+        </div>
+      </div>
+      <!--      リーダーズ-->
+      <div id="img03_wrapper" class="popup_wrapper">
+        <div class="modal">
+          <div class="close_btn"><img src="close.png"></div>
+          <img src="leaders.png" width="800">
+          <div class="modal_contents">
+            <h3>Title</h3>
+            <p>Leaders10th WebデザインコースLOGO</p>
+            <h3>Work</h3>
+            <p>ライフイズテックのメンターを育成するIT教育研修プログラム10期のコースロゴを製作しました。現在、関東、関西合わせて20人ほどの大学生にWebデザインとフロントエンドのプログラミングを教えています。また100人以上の大学生にデザインツールを使った講義をしています。
+              <img src="leaders02.jpg" width="500"> Web上のプログラミングではhtmlタグを使うのでタグのシルエットをメインに「Leaders」の「L」と「10期」の「10」の文字を変形させてシンボルマークにしました。研修に合格した後、光や太陽のように中高生のメンバーを導く存在になってほしいという思いを込めて黄色を使っています。
+            </p>
+            <div class="contents_btn">
+              <a href="https://life-is-tech.com/leaders/">MORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--    motety-->
+      <div id="img04_wrapper" class="popup_wrapper">
+        <div class="modal">
+          <div class="close_btn"><img src="close.png"></div>
+          <img src="motety.png" width="800">
+          <div class="modal_contents">
+            <h3>Title</h3>
+            <p>Motety</p>
+            <h3>Concept</h3>
+            <p>女性の悩みを解決する総合情報サイト</p>
+            <h3>Work</h3>
+            <p>ウイニングクルー株式会社で新規事業の脱毛で悩む女性の悩みを解決するサービスのデザインを担当しました。自分はこの会社で唯一のデザイナーだったのでこのサービスに関わるほとんどのデザインを担当しました。ABテストを繰り返し最適なバナーや画像SEOを意識したサムネイルのデザインを行いました。<br>
+              <img src="motety02.png" width="500"><br> サービスをやっていく上でなかなかPV数が伸びずユーザーに届いていないという問題を定義し、入社して1ヶ月でリデザインを提案しました。
+              <br> 脱毛に悩む女性がどんな情報を求めているかなどをユーザーリサーチや競合サービスのサイトのリサーチを繰り返しました。色やフォントなどのヴィジュアル要素はターゲットが読みそうな雑誌で研究しました。 リサーチを重ね、ピックアップ情報やランキングなどを2カラムで表示させて、ランキング情報にもサムネイルを乗せて記事の内容がイメージしやすいようにしました。
+              <img src="motety_icon.jpg" width="500"><br> ライターさんのアイコンだったりバナーやサムネイルをデザインしていました。
+            </p>
+            <div class="contents_btn">
+              <a href="https://motety.com/" target="_blank">MORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--      Match Mlothes-->
+      <div id="img05_wrapper" class="popup_wrapper">
+        <div class="modal">
+          <div class="close_btn"><img src="close.png"></div>
+          <img src="matchcloset.png" width="800">
+          <div class="modal_contents">
+            <h3>Title</h3>
+            <p>Match Clothes</p>
+            <h3>Concept</h3>
+            <p>Favorite Clothes of Favorite person</p>
+            <p>〜お互いに好きな服を着よう〜</p>
+            <h3>Work</h3>
+            <p>デザイナーの登竜門と言われているGoodgatchのサマーインターンに参加した時の作品です。テーマは「ファッション×AI」でサービスを作るというものでした。簡単にサービスを伝えると、AIがお互いの好みやシーンに適したファッションを分析し、レコメンドしてくれるサービスです。PMが1人デザイナーが2人の3人チームで僕はサービスのUIデザインを担当しました。ファッションに関する悩みをアンケートを取った際「自分に合ったファッションが 分からない・決められない人が多い」問題に着目し、そこで僕らは相手の好みやシチュエーションに合っていて、自分も着たいと思える服装を知ることができるサービスを提案しました。 背景として、好きな人とデートをすることが決まった時「よく思われたい」という感情があると思います。そこでこのサービスを使うと初めに自分の好みのファッションを選んでもらう（相手も同様）ので相手が好むファッションとシーン（デート）などを選択することで人工知能がオススメの服をオススメしてくれます。これによりファッションに疎い男性が気軽に服を決めることができてデートでもうまく行くことができるそんなサービスです。
+            </p>
+            <div class="contents_btn">
+              <a href="https://www.icloud.com/keynote/05COc1BlzbjFux7aQV5CEYFGQ#TKR_production%5F%E6%9C%80%E7%B5%82%E3%83%95%E3%82%9A%E3%83%AC%E3%82%BB%E3%82%99%E3%83%B3" target="_blank">MORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--      ARCH-->
+      <div id="img06_wrapper" class="popup_wrapper">
+        <div class="modal">
+          <div class="close_btn"><img src="close.png"></div>
+          <img src="arch.png" width="800">
+          <div class="modal_contents">
+            <h3>Title</h3>
+            <p>ARCH</p>
+            <h3>Concept</h3>
+            <p>友達をシェアするサービス</p>
+            <h3>Work</h3>
+            <p>大学生に使われるシェアリングサービス サイバーエージェントのインターンUIDA1期生として（UI Design Academy）で「学生に使われるシェアリングサービス」をテーマに友達と友達を繋げるARCHというサービスを提案しました。大学に同じ目標の持った友達がいなかったり同じ趣味を持った友達と繋がりたいという大学生をターゲットにしています。主な使い方は自分の友達をシェアして（紹介文を書いてタイムラインに投稿する）気になった人に友達申請を送ってマッチングさせるシステムです。他のSNSと差別化するためにタイムラインには紹介文しか流れて来ません。自分が繋がりたいワードで検索をかけることにより友達の友達でそのワードとマッチした人が一覧に出て来ます。
+            </p>
+            <div class="coming_btn">
+              <a href="#">coming soon</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--      ななみ-->
+      <div id="img07_wrapper" class="popup_wrapper">
+        <div class="modal">
+          <div class="close_btn"><img src="close.png"></div>
+          <img src="nanami.png" width="800">
+          <div class="modal_contents">
+            <h3>Title</h3>
+            <p>和食料理屋ななみ</p>
+            <h3>Concept</h3>
+            <p>和心洋彩</p>
+            <h3>Work</h3>
+            <p>ウィニングクルー株式会社でブランディング事業のクライアントからの依頼で新規OPENする和食料理やのショップカードをデザインしました。 赤坂はオフィス街なので20代~40代会社員をターゲットにデザインしました。お店のコンセプトに和心洋彩というのがあり、 敷居が高い和食料理に洋食のエッセンスを加えることで気軽に和食を楽しむことができるという店主の思いがあったので高級感を出しすぎず且つカジュアルすぎない配色にしました。</p>
+            <div class="contents_btn">
+              <a href="https://nana-mi.jp/" target="_blank">MORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--      クリキャンネームカード-->
+      <div id="img08_wrapper" class="popup_wrapper">
+        <div class="modal">
+          <div class="close_btn"><img src="close.png"></div>
+          <img src="namecard.png" width="800">
+          <div class="modal_contents">
+            <h3>Title</h3>
+            <p>クリスマスキャンプ2017 ネームカード</p>
+            <h3>Concept</h3>
+            <p>遊園地</p>
+            <h3>Work</h3>
+            <p>ライフイズテックの一大イベントクリスマスキャンプのネームカードのデザインをしました。今回のテーマが遊園地で会場がアメリカの都市になるということで遊園地のチケットのようなデザインにしました。背景として参加が決まった中高生の家にこのネームカードがついたチケットのデザインが届きそれを会場で切り取りネームカードになるというものです。<br>
+              <img src="namecard02.jpg" width="500"><br> この年は歴代最高の700人規模のITキャンプで一つの会場に6つの部屋に分けられました。部屋の名前はアメリカの州の名前になり各コースで別れるような仕様になっています。
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--      春学期Tシャツ-->
+      <div id="img09_wrapper" class="popup_wrapper">
+        <div class="modal">
+          <div class="close_btn"><img src="close.png"></div>
+          <img src="spring_t.png" width="800">
+          <div class="modal_contents">
+            <h3>Title</h3>
+            <p>春季講習Tシャツ</p>
+            <h3>Concept</h3>
+            <p>若葉</p>
+            <h3>Work</h3>
+            <p>ライフイズテックでは長期休み期間に行うキャンプと継続的に塾のようにプログラミングを学ぶスクールというものがあります。今回はスクールで春季講習を行った時のTシャツのデザインをしました。<br> 僕らは中高生にアプリをリリースさせたり公開して大会やコンテストに出展してもらい実際に評価してもらい自信をつけてもらうような取り組みをしています。その中で今回のテーマは「若葉」ということで、まだ生い茂っている木のように技術力があるわけではないけど若葉のように始まりの一歩目を今回の春季講習で踏み出そうという思いで決まりました。
+              <img src="spring02.png" width="500"><br> 僕はデザインをする上で大事にしていることは「発散と収束」を意識して製作をしています。例えばシンボルマーク一つ作る際にも最初はどういう方向性で行くかたくさんのパターンを出していきます。要素が繋げられそうなところは繋げたりまったく違うパターンを出した上で一つのシンボルマークを決めました。
+              <br>
+              <img src="spring03.png" width="500"><br> シンボルマークが決まったら次は文字組みでまたパターンを出して発散と収束を繰り返し、最終的にこのアウトプットになりました。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="popupbg">
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+
+</body>
+
+</html>
